@@ -103,30 +103,40 @@
 # print(f"lương ròng là:{luong_rong}")
 
 
-n=input("nhập vào tháng")
-if n==1:
-    print("tháng 1 có 31 ngày")
-elif n==2:
-    print("tháng 2 có 28 ngày")
-elif n==3:
-    print("tháng 3 có 31 ngày")
-elif n==4:
-    print("tháng 4 có 30 ngày")
-elif n==5:
-    print("tháng 3 có 31 ngày")
-elif n==6:
-    print("tháng 3 có 30 ngày")
-elif n==7:
-    print("tháng 7 có 31 ngày")
-elif n==8:
-    print("tháng 8 có 31 ngày")
-elif n==9:
-    print("tháng 9 có 30 ngày")
-elif n==10:
-    print("tháng 10 có 31 ngày")
-elif n==11:
-    print("tháng 11 có 30 ngày")
-elif n==12:
-    print("tháng 12 có 31 ngày")
+# n=input("nhập vào tháng")
+# if n==1:
+#     print("tháng 1 có 31 ngày")
+# elif n==2:
+#     print("tháng 2 có 28 ngày")
+# elif n==3:
+#     print("tháng 3 có 31 ngày")
+# elif n==4:
+#     print("tháng 4 có 30 ngày")
+# elif n==5:
+#     print("tháng 5 có 31 ngày")
+# elif n==6:
+#     print("tháng 6 có 30 ngày")
+# elif n==7:
+#     print("tháng 7 có 31 ngày")
+# elif n==8:
+#     print("tháng 8 có 31 ngày")
+# elif n==9:
+#     print("tháng 9 có 30 ngày")
+# elif n==10:
+#     print("tháng 10 có 31 ngày")
+# elif n==11:
+#     print("tháng 11 có 30 ngày")
+# elif n==12:
+#     print("tháng 12 có 31 ngày")
+# else:
+#     print("nhập sai")
+
+
+n=int(input("nhập số"))
+if 100<n<999:
+    tram=n//100
+    chuc=(n%100)//10
+    don_vi=n%10
+    print(tram, "tram", chuc, "mươi", don_vi)
 else:
     print("nhập sai")
